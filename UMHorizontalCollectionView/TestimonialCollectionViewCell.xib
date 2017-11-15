@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="TestimonialCollectionViewCell" id="gTV-IL-0wX" customClass="TestimonialCollectionViewCell" customModule="UMHorizontalCollectionView" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="120"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="120"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="“" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="none" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lmL-Lk-XAj">
+                        <rect key="frame" x="16" y="0.0" width="27" height="72"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="60"/>
+                        <color key="textColor" red="0.276498735" green="0.310548991" blue="0.63583403829999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                        <size key="shadowOffset" width="0.0" height="0.0"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="Lorem ipsum dolor sit amet, no nisl nihil vel, sit ei alia malorum prompta. Eum duis prodesset ea”." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="P2f-sW-FGm">
+                        <rect key="frame" x="59" y="20.5" width="300" height="79"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                        <color key="textColor" red="0.94005864859999999" green="0.48333734270000001" blue="0.071717061100000007" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="lmL-Lk-XAj" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="16" id="14g-SP-M1e"/>
+                <constraint firstItem="lmL-Lk-XAj" firstAttribute="top" relation="greaterThanOrEqual" secondItem="gTV-IL-0wX" secondAttribute="top" id="EJ4-qc-0LK"/>
+                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="P2f-sW-FGm" secondAttribute="bottom" constant="20" id="G0z-h9-kB6"/>
+                <constraint firstAttribute="trailing" secondItem="P2f-sW-FGm" secondAttribute="trailing" constant="16" id="Iez-zq-3Er"/>
+                <constraint firstItem="P2f-sW-FGm" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="JQC-N2-ksb"/>
+                <constraint firstItem="P2f-sW-FGm" firstAttribute="leading" secondItem="lmL-Lk-XAj" secondAttribute="trailing" constant="16" id="Laa-lI-Y5l"/>
+                <constraint firstItem="lmL-Lk-XAj" firstAttribute="top" secondItem="P2f-sW-FGm" secondAttribute="top" constant="-20" id="WUV-d4-bf1"/>
+            </constraints>
+            <size key="customSize" width="355" height="146"/>
+            <connections>
+                <outlet property="testimonialLabel" destination="P2f-sW-FGm" id="SrK-is-Xf7"/>
+            </connections>
+            <point key="canvasLocation" x="-160.5" y="-32"/>
+        </collectionViewCell>
+    </objects>
+</document>
